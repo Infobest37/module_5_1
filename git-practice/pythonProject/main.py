@@ -1,6 +1,11 @@
-def greet(name):
-    return f"Hello, {name}!"
+def disemvowel(string_):
+    strin= "aeiouAEIOU"
+    for i in string_:
+        if i in strin:
+            string_=string_.replace(i, "")
+    return string_
 
-if __name__ == "__main__":
-    print(greet("World"))
-,mm
+
+string_ = "Hello"
+print(string_)
+
