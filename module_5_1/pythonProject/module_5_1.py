@@ -7,12 +7,12 @@ class House:
         self.new_floor = new_floor
         print(f"ЖК называется {self.name}, этажей в доме {self.number_of_floors}, этаж номер {self.new_floor} ")
 
-        if  self.number_of_floors < 1:
+        if  self.number_of_floors < 1 or self.new_floor > self.number_of_floors:
             print(f"В ЖК {self.name} Такого этажа не существует")
             return
-        if self.new_floor > self.number_of_floors:
-            print(f"В ЖК {self.name} Такого этажа не существует")
-            return
+        else:
+            print(f"Добро пожаловать на {self.new_floor} этаж")
+
 
 
         for i in range(1,self.new_floor + 1):
